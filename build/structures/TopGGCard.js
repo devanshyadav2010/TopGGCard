@@ -163,23 +163,23 @@ class TopGGCard {
             if(this.streak.length == 1) {
                 ctx.font = "bold 60px chewy";
                 ctx.fillStyle = "#787878";
-                ctx.fillText(`#${this.streak}`, 1080, 250);
+                ctx.fillText(`${this.streak}`, 1080, 250);
             } else  if(this.streak.length == 2) {
                 ctx.font = "bold 60px chewy";
                 ctx.fillStyle = "#787878";
-                ctx.fillText(`#${this.streak}`, 1060, 250);
+                ctx.fillText(`${this.streak}`, 1060, 250);
             } else  if(this.streak.length == 3) {
                 ctx.font = "bold 60px chewy";
                 ctx.fillStyle = "#787878";
-                ctx.fillText(`#${this.streak}`, 1050, 250);
+                ctx.fillText(`${this.streak}`, 1050, 250);
             } else  if(this.streak.length == 4) {
                 ctx.font = "bold 55px chewy";
                 ctx.fillStyle = "#787878";
-                ctx.fillText(`#${this.streak}`, 1040, 250);
+                ctx.fillText(`${this.streak}`, 1040, 250);
             } else  if(this.streak.length == 5) {
                 ctx.font = "bold 50px chewy";
                 ctx.fillStyle = "#787878";
-                ctx.fillText(`#${this.streak}`, 1035, 250);
+                ctx.fillText(`${this.streak}`, 1035, 250);
             }
             const abbreviateNumber = (value) => {
 
