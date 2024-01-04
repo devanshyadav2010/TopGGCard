@@ -1,0 +1,51 @@
+{
+  "name": "topggcard",
+  "version": "1.0.0",
+  "description": "TopGGCard is a powerful Node.js package designed to create visually appealing cards displaying user votes, username with avatar, and additional customizable features. Elevate your user experience by showcasing engagement metrics in a stylish manner.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "node example/testCard"
+  },
+  "files": [
+    "build",
+    "res"
+  ],
+  "keywords": [
+    "topgg-card",
+    "discord-topgg-card",
+    "topgg-card-discord",
+    "discord.js",
+    "topgg",
+    "top.gg",
+    "image",
+    "node-canvas",
+    "canvas-constructor",
+    "discord",
+    "discord-canvas",
+    "discord-canvas-topgg-card",
+    "discord-canvas-topgg",
+    "topggcard",
+    "discord-topggcard",
+    "discord-topgg-card",
+    "discord.js-topggcard",
+    "discord.js-topgg-card"
+  ],
+  "author": "devanshyadav2010",
+  "license": "MIT",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.44",
+    "color-thief-bun": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.5.0",
+    "typescript": "^5.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devanshyadav2010/topggcard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devanshyadav2010/topggcard/issues"
+  }
+}
