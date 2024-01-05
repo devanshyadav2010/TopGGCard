@@ -2,19 +2,19 @@ const canvas = require("@napi-rs/canvas");
 const { colorFetch } = require("../functions/colorFetch");
 
 
-canvas.GlobalFonts.registerFromPath(`build/structures/font/circularstd-black.otf`, "circular-std");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-black.ttf`, "noto-sans");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/Chewy-Regular.ttf`, "chewy");
+//canvas.GlobalFonts.registerFromPath(`build/structures/font/circularstd-black.otf`, "circular-std");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-black.ttf`, "noto-sans");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/Chewy-Regular.ttf`, "chewy");
 
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard-bun/build/structures/font/circularstd-black.otf`, "circular-std");
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard-bun/build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard-bun/build/structures/font/notosans-black.ttf`, "noto-sans");
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard-bun/build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard-bun/build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
-canvas.GlobalFonts.registerFromPath(`node_modules/musicard-bun/build/structures/font/Chewy-Regular.ttf`, "chewy");
+canvas.GlobalFonts.registerFromPath(`node_modules/topggcard/build/structures/font/circularstd-black.otf`, "circular-std");
+canvas.GlobalFonts.registerFromPath(`node_modules/topggcard/build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
+canvas.GlobalFonts.registerFromPath(`node_modules/topggcard/build/structures/font/notosans-black.ttf`, "noto-sans");
+canvas.GlobalFonts.registerFromPath(`node_modules/topggcard/build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
+canvas.GlobalFonts.registerFromPath(`node_modules/topggcard/build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
+canvas.GlobalFonts.registerFromPath(`node_modules/topggcard/build/structures/font/Chewy-Regular.ttf`, "chewy");
 
 class TopGGCard {
     constructor(options) {
@@ -104,7 +104,7 @@ class TopGGCard {
 
         if (this.name.length > 10) this.name = `${this.name.slice(0, 10)}...`;
         if (this.votes.length > 10) this.votes = `${this.votes.slice(0, 10)}...`;
-        if (this.streak.length > 5) this.streak = `99999`;
+        if (this.streak.length > 10000) this.streak = `9999`;
 
 
             const frame = canvas.createCanvas(1280, 450);
@@ -155,7 +155,7 @@ class TopGGCard {
 
             ctx.font = "bold 60px circular-std, noto-emoji, noto-sans-jp, noto-sans, noto-sans-kr";
             ctx.fillStyle = "#787878";
-            ctx.fillText(this.votes, 431, 270);
+            ctx.fillText(`Votes: ${this.votes}`, 431, 270);
 
 
 
@@ -163,23 +163,23 @@ class TopGGCard {
             if(this.streak.length == 1) {
                 ctx.font = "bold 60px chewy";
                 ctx.fillStyle = "#787878";
-                ctx.fillText(`${this.streak}`, 1080, 250);
+                ctx.fillText(`#${this.streak}`, 1080, 250);
             } else  if(this.streak.length == 2) {
                 ctx.font = "bold 60px chewy";
                 ctx.fillStyle = "#787878";
-                ctx.fillText(`${this.streak}`, 1060, 250);
+                ctx.fillText(`#${this.streak}`, 1060, 250);
             } else  if(this.streak.length == 3) {
                 ctx.font = "bold 60px chewy";
                 ctx.fillStyle = "#787878";
-                ctx.fillText(`${this.streak}`, 1050, 250);
+                ctx.fillText(`#${this.streak}`, 1050, 250);
             } else  if(this.streak.length == 4) {
                 ctx.font = "bold 55px chewy";
                 ctx.fillStyle = "#787878";
-                ctx.fillText(`${this.streak}`, 1040, 250);
+                ctx.fillText(`#${this.streak}`, 1040, 250);
             } else  if(this.streak.length == 5) {
                 ctx.font = "bold 50px chewy";
                 ctx.fillStyle = "#787878";
-                ctx.fillText(`${this.streak}`, 1035, 250);
+                ctx.fillText(`#${this.streak}`, 1035, 250);
             }
             const abbreviateNumber = (value) => {
 
