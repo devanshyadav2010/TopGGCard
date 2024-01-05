@@ -1,6 +1,6 @@
 {
   "name": "topggcard",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "TopGGCard is a powerful Node.js package designed to create visually appealing cards displaying user votes, username with avatar, and additional customizable features. Elevate your user experience by showcasing engagement metrics in a stylish manner.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
