@@ -47,7 +47,7 @@ console.log("Done!");
 
 ## Preview
 
-![TopGGCard Preview](https://i.imgur.com/BDZHzNR.png)
+![TopGGCard Preview](https://i.imgur.com/ATyJ1WY.png)
 
 ## Credits
 
